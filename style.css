@@ -1,0 +1,151 @@
+* {
+	font-family: 'Press Start 2P', cursive;
+}
+
+body {
+	background-color: black;
+}
+
+h1 {
+	margin :0;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+button:hover {
+	background-color: #ddd;
+}
+
+#parent_div {
+	display: inline-block;
+	position: relative;
+}
+
+#battle_div{
+	background-color: black;
+	position: absolute;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#pokemon1_health_txt {
+	font-size: 16px;
+}
+
+#pokemon2_health_txt {
+	font-size: 16px;
+}
+
+#pokemon1_health_div {
+	background-color: white;
+	width: 250px;
+	position: absolute;
+	top: 340px;
+	left: 50px;
+	border: 4px black solid;
+	padding: 12px;
+}
+
+#pokemon1_health_bars_div {
+	position: relative;
+}
+
+#pokemon1_health_bar {
+	height: 5px;
+	background-color: #ccc;
+	margin-top: 10px;
+}
+
+#pokemon1_health_bar_full {
+	height: 5px;
+	background-color: green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#pokemon2_health_div {
+	background-color: white;
+	width: 250px;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	border: 4px black solid;
+	padding: 12px;
+}
+
+#pokemon2_health_bars_div {
+	position: relative;
+}
+
+#pokemon2_health_bar {
+	height: 5px;
+	background-color: #ccc;
+	margin-top: 10px;
+}
+
+#pokemon2_health_bar_full {
+	height: 5px;
+	background-color: green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#dialogue_box {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right : 0;
+	padding: 12px;
+	display: none;
+	cursor: pointer;
+}
+
+#health_and_attack_bar_interface {
+	display: none;
+}
+
+#attack_bar_interface {
+	background-color: white;
+	height: 150;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right : 0;
+	border-top: 4px black solid;
+	display: flex;
+}
+
+#attacks_box {
+	width: 80%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#attack_type {
+	border-left: 4px black solid;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	
+	justify-content: center;
+}
+
+#attack_type_txt {
+	font-size: 16px;
+}
+
